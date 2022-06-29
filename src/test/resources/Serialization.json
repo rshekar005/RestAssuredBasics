@@ -1,0 +1,13 @@
+[ {
+  "firstname" : "Raja",
+  "lastname" : "Shekar",
+  "age" : 23,
+  "favouriteFoods" : [ "Biryani", "Dal" ],
+  "married" : false
+}, {
+  "firstname" : "Narayana",
+  "lastname" : "Jonnala",
+  "age" : 28,
+  "favouriteFoods" : [ "Parata", "Roti" ],
+  "married" : false
+} ]

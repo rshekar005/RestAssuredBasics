@@ -1,0 +1,7 @@
+{
+    "body": "Added Comment",
+    "visibility": {
+        "type": "role",
+        "value": "Administrators"
+    }
+}

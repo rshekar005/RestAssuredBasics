@@ -1,0 +1,12 @@
+{
+  "lastName" : "Pillalamarri",
+  "totalPrice" : 1000,
+  "bookingTable" : 23,
+  "depositPaid" : true,
+  "additionalDetails" : "BreakFast",
+  "bookingDates" : {
+    "checkIn" : "2022-01-03",
+    "checkOut" : "2022-01-04"
+  },
+  "firstName" : "Raja"
+}

@@ -1,0 +1,20 @@
+A cookie is a small piece of data that a server sends to a user's web browser.
+The browser may store cookies or may not store cookies, if cookie is stored from the next request browser will send the same cookie to the same server.
+Typically it's used to tell if two requests came from the same browser -- Keeping a user logged in
+
+
+What is cookie based authentication?
+Cookie based authentication uses HTTP cookies to authenticate client requests and maintain session information. It works as follows: The client sends a login information to the server. On successful login, the server response includes the set cookies header that contains the cookie name, value, expiry time and some other info etc.
+
+
+What is jsession id?
+As the name suggests it is a java session id. It is a cookie in J2EE web application which is used in session tracking.
+
+JIRA works completely on cookie based authentication.
+
+In order to work with JIRA, we need to install JIRA up and running in local machine or any server. We can start docker JIRA command up and running. And then create an account. 
+How to make JIRA server up and running using docker?
+Please refer docker document.
+
+JIRA document: https://developer.atlassian.com/server/jira/platform/jira-rest-api-examples/
+https://developer.atlassian.com/server/jira/platform/cookie-based-authentication/

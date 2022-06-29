@@ -1,0 +1,28 @@
+Ouath 2.0
+==================
+client (ABC Application ) wants access to google contacts.
+Application contains google button. Developers writen some code to access google authorization server with redirect url.
+When user clicks on button.
+
+Step 1: It will send a request to google auth server.  Internally used below points
+	While sending a request we need to pass Scope parameters (access to files/pictures/contacts/videos/profile)
+	Request type : Temporary grant type
+	callback url (Redirect URL). Google has respond back to client right. So with the help pf callback URL , google sends a response to client.
+	Client id: xxxx
+	
+Example:	https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fusers.wix.com%3Fid%3Dauth224748&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&client_id=352188552355.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fusers.wix.com&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow
+
+Step 2: UI will display to enter google username and password ,that UI will comes from Google authorization server. Enter Username and password and click on allow. It will send again a request to google authorization server. From here it will send temporary authorization code to ABC Application with the help of redirect url.
+
+Step 3: Again ABC application will send a request to authorization server with the temporary access code, client id , client secret. From authorization server it send send actual acess token to client(ABC Application).
+
+Step 4: Now client sends a request to google resource owner which as all the data about user not google authorization server along with access token. Then google resource owner responds back to application with what ever data is required.
+
+Here temporary access token acts as a grant type. With the help of temporaty access token, client id and client secret access token is genereted.
+
+Note: We cannot directly sends a temporary access token to resource owner. It will send response as access denied. Becuase hackers can access this temporary access token.
+Automation:
+
+Step 1: We have to generate access token with the help of client id, client secret, grant type. This will provide by resource owner.
+Step 2: From next requests we need to pass this access token along with other request
+ */

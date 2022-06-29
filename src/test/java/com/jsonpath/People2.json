@@ -1,0 +1,39 @@
+{
+ "data":[
+  {
+    "id":1,
+    "firstname":"Rahul",
+    "lastname":"shetty",
+    "email":"rahul@gmail.com",
+    "gender":"Male"
+  } ,
+  {
+    "id":2,
+    "firstname":"Amod",
+    "lastname":"mahajon",
+    "email":"amod@gmail.com",
+    "gender":"Male"
+  },
+  {
+    "id":3,
+    "firstname":"Naveen",
+    "lastname":"Automationlabs",
+    "email":"naveen@gmail.com",
+    "gender":"Male"
+  },
+   {
+    "id":4,
+    "firstname":"Priya",
+    "lastname":"Warrior",
+    "email":"priya@gmail.com",
+    "gender":"Female"
+  },
+   {
+    "id":5,
+    "firstname":"Kajal",
+    "lastname":"Agarwal",
+    "email":"kajal@gmail.com",
+    "gender":"Female"
+  }
+ ] 
+}
